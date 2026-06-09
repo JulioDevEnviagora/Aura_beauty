@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações — Kanglu × Aura Beauty</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div style="font-family:var(--font-serif);font-size:1.35rem;letter-spacing:0.08em;font-weight:600;">Kanglu</div>
+        <div class="sidebar-client">
+          <img src="assets/aura-logo.png" alt="">
+          <span>Aura Beauty</span>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-section">
+          <a href="dashboard.html" class="nav-link"><span class="nav-icon">◈</span> Dashboard</a>
+          <a href="orders.html" class="nav-link"><span class="nav-icon">☰</span> Pedidos</a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">Configurações</div>
+          <a href="config-settings.html" class="nav-link active"><span class="nav-icon">◎</span> Geral</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">⬡</span> ERP</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">↗</span> Transportadoras</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">◷</span> Prazos</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">∞</span> Integrações</a>
+        </div>
+        <div class="nav-section">
+          <a href="profile.html" class="nav-link"><span class="nav-icon">○</span> Meu Perfil</a>
+          <a href="index.html" class="nav-link"><span class="nav-icon">←</span> Apresentação</a>
+          <a href="publico.html" class="nav-link"><span class="nav-icon">↗</span> Ver rastreio público</a>
+        </div>
+      </nav>
+      <div class="sidebar-footer">Demo · Jun 2026</div>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar animate-in">
+        <div>
+          <h1>Configurações</h1>
+          <p>Personalize a experiência de rastreio Aura Beauty</p>
+        </div>
+        <button class="btn btn-primary btn-sm">Salvar alterações</button>
+      </div>
+
+      <div class="form-grid">
+        <div>
+          <div class="form-section animate-in delay-1">
+            <h3>Links de Rastreamento</h3>
+            <div class="form-group">
+              <label>Rastreamento com CPF</label>
+              <div class="input-group">
+                <input type="text" value="https://kanglu.com/public/aura-beauty/00000000000" readonly>
+                <button class="btn btn-outline btn-sm" data-copy>Copiar</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Rastreamento por pedido</label>
+              <div class="input-group">
+                <input type="text" value="https://kanglu.com/public/aura-beauty/pedido/" readonly>
+                <button class="btn btn-outline btn-sm" data-copy>Copiar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section animate-in delay-2">
+            <h3>Informações da Empresa</h3>
+            <div class="form-group">
+              <label>Logo da empresa</label>
+              <div style="display:flex;align-items:center;gap:1rem;">
+                <div class="brand-logo brand-logo--dark"><img src="assets/aura-logo.png" alt=""></div>
+                <button class="btn btn-outline btn-sm">Alterar logo</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Nome da empresa</label>
+              <input type="text" value="Aura Beauty">
+            </div>
+            <div class="form-group">
+              <label>URL de acesso</label>
+              <input type="text" value="aura-beauty">
+            </div>
+          </div>
+
+          <div class="form-section animate-in delay-3">
+            <h3>Personalização Visual</h3>
+            <div class="form-group">
+              <label>Cor primária</label>
+              <div class="color-input">
+                <div class="color-swatch" style="background:#ebe1d5;"></div>
+                <input type="text" value="#EBE1D5">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Cor de destaque</label>
+              <div class="color-input">
+                <div class="color-swatch" style="background:#b8956a;"></div>
+                <input type="text" value="#B8956A">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="form-section animate-in delay-2">
+            <h3>Integração WhatsApp</h3>
+            <div class="form-group">
+              <label>Número do WhatsApp</label>
+              <input type="text" value="5514999990000">
+            </div>
+            <div class="form-group">
+              <label>Mensagem padrão de suporte</label>
+              <textarea rows="3">Olá! Preciso de ajuda com o meu pedido Aura Beauty.</textarea>
+            </div>
+          </div>
+
+          <div class="form-section animate-in delay-3">
+            <h3>Notificações</h3>
+            <div class="toggle-row">
+              <span>WhatsApp — alertas de status</span>
+              <div class="toggle"></div>
+            </div>
+            <div class="toggle-row">
+              <span>E-mail — confirmações de entrega</span>
+              <div class="toggle"></div>
+            </div>
+          </div>
+
+          <div class="form-section animate-in delay-4">
+            <h3>Preview — Experiência do Cliente</h3>
+            <div class="preview-phone">
+              <div class="preview-phone-header">
+                <div class="brand-logo brand-logo--dark" style="margin:0 auto;width:fit-content;">
+                  <img src="assets/aura-logo.png" alt="Aura Beauty" style="height:24px;">
+                </div>
+              </div>
+              <div class="preview-phone-body">
+                <p>Acompanhe seu pedido</p>
+                <div class="phone-card" style="text-align:left;margin-bottom:0.75rem;">
+                  <div class="phone-card-row">
+                    <div class="phone-product"></div>
+                    <div>
+                      <div class="phone-card-title">Body Splash Afrodite</div>
+                      <span class="status-badge success">Em trânsito</span>
+                    </div>
+                  </div>
+                  <div class="phone-progress"><div class="phone-progress-fill"></div></div>
+                </div>
+                <a href="publico.html" class="btn btn-primary btn-sm btn-block">Ver demo completa</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

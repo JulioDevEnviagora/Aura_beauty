@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Kanglu × Aura Beauty</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div style="font-family:var(--font-serif);font-size:1.35rem;letter-spacing:0.08em;font-weight:600;">Kanglu</div>
+        <div class="sidebar-client">
+          <img src="assets/aura-logo.png" alt="">
+          <span>Aura Beauty</span>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-section">
+          <a href="dashboard.html" class="nav-link active"><span class="nav-icon">◈</span> Dashboard</a>
+          <a href="orders.html" class="nav-link"><span class="nav-icon">☰</span> Pedidos</a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">Configurações</div>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">◎</span> Geral</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">⬡</span> ERP</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">↗</span> Transportadoras</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">◷</span> Prazos</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">∞</span> Integrações</a>
+        </div>
+        <div class="nav-section">
+          <a href="profile.html" class="nav-link"><span class="nav-icon">○</span> Meu Perfil</a>
+          <a href="index.html" class="nav-link"><span class="nav-icon">←</span> Apresentação</a>
+          <a href="publico.html" class="nav-link"><span class="nav-icon">↗</span> Ver rastreio público</a>
+        </div>
+      </nav>
+      <div class="sidebar-footer">Demo · Jun 2026</div>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar animate-in">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Visão geral dos pedidos Aura Beauty</p>
+        </div>
+        <div class="user-chip">
+          <span>Usuário Demo</span>
+          <div class="user-avatar">UD</div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card stat-card--highlight animate-in delay-1">
+          <div class="value">12.477</div>
+          <div class="label">Total</div>
+          <div class="desc">Pedidos realizados</div>
+        </div>
+        <div class="stat-card animate-in delay-2">
+          <div class="value">8.942</div>
+          <div class="label">Finalizados</div>
+          <div class="desc">Entregues com sucesso</div>
+        </div>
+        <div class="stat-card animate-in delay-3">
+          <div class="value">2.156</div>
+          <div class="label">Em trânsito</div>
+          <div class="desc">Com transportadora</div>
+        </div>
+        <div class="stat-card animate-in delay-4">
+          <div class="value">1.089</div>
+          <div class="label">Pendentes</div>
+          <div class="desc">Aguardando NF</div>
+        </div>
+        <div class="stat-card animate-in delay-5">
+          <div class="value">290</div>
+          <div class="label">Erros</div>
+          <div class="desc">Requerem atenção</div>
+        </div>
+      </div>
+
+      <div class="chart-box animate-in">
+        <h3>Evolução de Pedidos</h3>
+        <div class="chart-tabs">
+          <button class="chart-tab active">7 dias</button>
+          <button class="chart-tab">14 dias</button>
+          <button class="chart-tab">30 dias</button>
+        </div>
+        <div class="chart-placeholder">
+          <div class="chart-bar" style="height:40%;"></div>
+          <div class="chart-bar" style="height:55%;"></div>
+          <div class="chart-bar" style="height:48%;"></div>
+          <div class="chart-bar" style="height:72%;"></div>
+          <div class="chart-bar" style="height:65%;"></div>
+          <div class="chart-bar" style="height:88%;"></div>
+          <div class="chart-bar" style="height:78%;"></div>
+          <div class="chart-bar" style="height:92%;"></div>
+          <div class="chart-bar" style="height:70%;"></div>
+          <div class="chart-bar" style="height:85%;"></div>
+          <div class="chart-bar" style="height:95%;"></div>
+          <div class="chart-bar" style="height:80%;"></div>
+        </div>
+        <div class="chart-legend">
+          <span class="legend-transfer">Em transferência</span>
+          <span class="legend-delivered">Entregue</span>
+          <span class="legend-collected">Pedido coletado</span>
+        </div>
+      </div>
+
+      <div class="charts-row">
+        <div class="chart-box animate-in delay-2">
+          <h3>Por Transportadora</h3>
+          <div class="donut-wrap">
+            <div class="donut-placeholder"></div>
+            <ul class="carrier-list">
+              <li><span>MANDAE</span><strong>57%</strong></li>
+              <li><span>Sem transportadora</span><strong>21%</strong></li>
+              <li><span>FM TRANSPORTES</span><strong>12%</strong></li>
+              <li><span>LOGGI</span><strong>10%</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="chart-box animate-in delay-3">
+          <h3>Taxa de Entrega no Prazo</h3>
+          <div style="text-align:center;padding:1.5rem 0;">
+            <div style="font-family:var(--font-serif);font-size:4rem;font-weight:600;color:var(--aura-gold);line-height:1;">94,2%</div>
+            <p style="font-size:0.8rem;color:var(--aura-muted);margin-top:0.5rem;">+2,1% vs. mês anterior</p>
+          </div>
+          <div class="mini-progress-bar" style="height:6px;border-radius:3px;">
+            <div class="mini-progress-fill" style="width:94.2%;"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

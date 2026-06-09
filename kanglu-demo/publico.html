@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seus Pedidos — Aura Beauty</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="public-page">
+  <div class="experience-shell">
+    <header class="public-header">
+      <div class="public-header-inner">
+        <a href="index.html" class="back-btn" aria-label="Voltar">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </a>
+        <a href="index.html" class="brand-logo brand-logo--dark">
+          <img src="assets/aura-logo.png" alt="Aura Beauty">
+        </a>
+        <button class="btn-icon" aria-label="Ajuda">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="public-main">
+      <section class="public-hero">
+        <p class="public-hero-eyebrow">Rastreamento</p>
+        <h1>Seus Pedidos</h1>
+        <p>Acompanhe cada etapa da entrega com transparência e elegância.</p>
+      </section>
+
+      <div class="public-content">
+        <div class="user-strip animate-in">
+          <div class="user-strip-info">
+            <h2>Olá, Maria</h2>
+            <p>CPF ·••.•••.•••-•• · 2 pedidos</p>
+          </div>
+          <div class="user-avatar-lg">M</div>
+        </div>
+
+        <p class="section-label animate-in delay-1">Em andamento</p>
+
+        <article class="order-card animate-in delay-2">
+          <div class="order-card-body">
+            <div class="order-card-top">
+              <div class="product-thumb product-thumb--teal"></div>
+              <div class="order-card-info">
+                <h3>Body Splash Afrodite Petals 200ml</h3>
+                <div class="order-id">#583547514977813564</div>
+                <div class="order-price">R$ 64,00</div>
+              </div>
+            </div>
+            <span class="status-badge success">Coletado pela transportadora</span>
+            <div class="mini-progress">
+              <div class="mini-progress-label">
+                <span>Progresso da entrega</span>
+                <span>65%</span>
+              </div>
+              <div class="mini-progress-bar">
+                <div class="mini-progress-fill" style="width:65%;"></div>
+              </div>
+            </div>
+            <div class="order-card-footer">
+              <span class="order-date">Compra em 15 abr 2026</span>
+              <a href="publico-pedido.html" class="btn btn-primary btn-sm">Rastrear</a>
+            </div>
+          </div>
+        </article>
+
+        <p class="section-label animate-in delay-3" style="margin-top:1.5rem;">Atenção necessária</p>
+
+        <article class="order-card animate-in delay-4">
+          <div class="order-card-body">
+            <div class="order-card-top">
+              <div class="product-thumb product-thumb--rose"></div>
+              <div class="order-card-info">
+                <h3>Kit Presente Linha Deusa — 3 itens</h3>
+                <div class="order-id">#583547406840661052</div>
+              </div>
+            </div>
+            <span class="status-badge error">Erro de integração</span>
+            <p style="font-size:0.78rem;color:var(--aura-muted);margin:0.75rem 0;">Não foi possível atualizar o status. Nossa equipe pode ajudar.</p>
+            <a href="#" class="btn btn-whatsapp">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.614.614l4.458-1.495A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.231 0-4.297-.736-5.966-1.978l-.425-.283-2.747.922.922-2.747-.283-.425A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Falar no WhatsApp
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="public-footer">
+      Experiência powered by <strong>Kanglu</strong>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

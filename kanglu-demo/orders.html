@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos — Kanglu × Aura Beauty</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div style="font-family:var(--font-serif);font-size:1.35rem;letter-spacing:0.08em;font-weight:600;">Kanglu</div>
+        <div class="sidebar-client">
+          <img src="assets/aura-logo.png" alt="">
+          <span>Aura Beauty</span>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-section">
+          <a href="dashboard.html" class="nav-link"><span class="nav-icon">◈</span> Dashboard</a>
+          <a href="orders.html" class="nav-link active"><span class="nav-icon">☰</span> Pedidos</a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">Configurações</div>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">◎</span> Geral</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">⬡</span> ERP</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">↗</span> Transportadoras</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">◷</span> Prazos</a>
+          <a href="config-settings.html" class="nav-link"><span class="nav-icon">∞</span> Integrações</a>
+        </div>
+        <div class="nav-section">
+          <a href="profile.html" class="nav-link"><span class="nav-icon">○</span> Meu Perfil</a>
+          <a href="index.html" class="nav-link"><span class="nav-icon">←</span> Apresentação</a>
+          <a href="publico.html" class="nav-link"><span class="nav-icon">↗</span> Ver rastreio público</a>
+        </div>
+      </nav>
+      <div class="sidebar-footer">Demo · Jun 2026</div>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar animate-in">
+        <div>
+          <h1>Pedidos</h1>
+          <p>Mostrando 20 de 12.477 pedidos</p>
+        </div>
+        <div class="user-chip">
+          <span>Usuário Demo</span>
+          <div class="user-avatar">UD</div>
+        </div>
+      </div>
+
+      <div class="table-toolbar animate-in delay-1">
+        <button class="btn btn-outline btn-sm">Atualizar</button>
+        <button class="btn btn-primary btn-sm">Exportar</button>
+        <select>
+          <option>Todos os status</option>
+          <option>Pedido criado</option>
+          <option>Em separação</option>
+          <option>Aguardando coleta</option>
+          <option>Pedido coletado</option>
+          <option>Em transferência</option>
+          <option>Entregue</option>
+          <option>Erro de integração</option>
+        </select>
+        <select>
+          <option>Todas as datas</option>
+          <option>Último mês</option>
+          <option>Últimos 3 meses</option>
+          <option>Últimos 6 meses</option>
+        </select>
+        <select>
+          <option>Todas as transportadoras</option>
+          <option>MANDAE</option>
+          <option>JADLOG</option>
+          <option>LOGGI</option>
+          <option>CORREIOS</option>
+        </select>
+      </div>
+
+      <table class="data-table animate-in delay-2">
+        <thead>
+          <tr>
+            <th>Pedido</th>
+            <th>Cliente</th>
+            <th>Status</th>
+            <th>Transportadora</th>
+            <th>Data</th>
+            <th>Previsão</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="publico-pedido.html">#187744</a></td>
+            <td>Maria Silva</td>
+            <td><span class="status-badge success">Entregue</span></td>
+            <td>MANDAE</td>
+            <td>15/04/2026</td>
+            <td>22/04/2026</td>
+            <td><a href="publico-pedido.html" class="table-action">Ver →</a></td>
+          </tr>
+          <tr>
+            <td><a href="publico-pedido.html">#187588</a></td>
+            <td>Maria Silva</td>
+            <td><span class="status-badge warning">Coletado</span></td>
+            <td>iMile</td>
+            <td>15/04/2026</td>
+            <td>27/04/2026</td>
+            <td><a href="publico-pedido.html" class="table-action">Ver →</a></td>
+          </tr>
+          <tr>
+            <td>#187512</td>
+            <td>Ana Costa</td>
+            <td><span class="status-badge info">Em transferência</span></td>
+            <td>LOGGI</td>
+            <td>14/04/2026</td>
+            <td>25/04/2026</td>
+            <td><a href="#" class="table-action">Ver →</a></td>
+          </tr>
+          <tr>
+            <td>#187401</td>
+            <td>João Santos</td>
+            <td><span class="status-badge warning">Aguardando coleta</span></td>
+            <td>JADLOG</td>
+            <td>13/04/2026</td>
+            <td>—</td>
+            <td><a href="#" class="table-action">Ver →</a></td>
+          </tr>
+          <tr>
+            <td>#187298</td>
+            <td>Carla Mendes</td>
+            <td><span class="status-badge error">Erro</span></td>
+            <td>—</td>
+            <td>12/04/2026</td>
+            <td>—</td>
+            <td><a href="#" class="table-action">Ver →</a></td>
+          </tr>
+          <tr>
+            <td>#187156</td>
+            <td>Pedro Lima</td>
+            <td><span class="status-badge success">Entregue</span></td>
+            <td>CORREIOS</td>
+            <td>10/04/2026</td>
+            <td>18/04/2026</td>
+            <td><a href="#" class="table-action">Ver →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
